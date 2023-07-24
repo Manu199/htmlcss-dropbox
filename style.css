@@ -7,10 +7,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  max-width: 1320px;
-  
-}
+
 .header {
   justify-content: space-between;
   height: 80px;
@@ -33,3 +30,28 @@ ul li{
   padding: 15px;
 }
 
+.jumbotron {
+  height: 700px;
+  background-color: #B4D0E7;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+.body-jumbo {
+  max-width: 900px;
+  
+}
+
+h1{
+  font-weight: 800;
+  font-size: 3.5rem;
+  
+}
+
+
+#img-jumbo {
+  scale: 0.5; 
+  align-self: flex-start;
+  padding: 0%;
+  float: right;
+}
