@@ -27,10 +27,11 @@ body {
   padding: 15px;
 }
 
-ul{
+.list-header {
   display: flex;
   list-style: none;
   align-items: center;
+  flex-direction: row;
 }
 ul li{
   padding: 15px;
@@ -38,7 +39,7 @@ ul li{
 }
 
 .jumbotron {
-  height: 700px;
+  height: 600px;
   background-color: #B4D0E7;
   width: 100%;
   justify-content: center;
@@ -46,7 +47,7 @@ ul li{
   /* overflow: hidden; */
 }
 .body-jumbo {
-  max-width: 900px;
+  max-width: 1200px;
   /* justify-content: center;
   display: flex; */
   height: 700px;
@@ -59,7 +60,7 @@ ul li{
   justify-content: center;
 } */
 .jumbo-top {
-  padding-top: 60px;
+  padding-top: 100px;
 
 }
 .jumbo-bottom {
@@ -68,30 +69,36 @@ ul li{
   align-content: flex-start;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 #jumboleft {
-  max-width: 400px;
+  max-width: 300px;
   padding-top: 20px;
+}
+#jumboright {
+  max-width: 500px;
 }
 h1 {
   font-weight: 800;
-  font-size: 3.5rem;
-  
+  font-size: 5rem;
+}
+h2, h4, h5 {
+  font-size: 2.7rem;
 }
 p {
   padding: 5px;
 }
 .btn {
-  max-width: 60%;
+  max-width: 90%;
   text-decoration: none;
   color: black;
   cursor: pointer;
   margin-top: 30px ;
 }
 .blu{
-  padding: 15px;
+  padding: 9px 15px;
   background-color: #0061FF;
+  
   color: white;
 }
 .buttons {
@@ -101,11 +108,14 @@ p {
   text-align: center;
   justify-content: center;
 }
+div.jumboright {
+  position: absolute;
+}
 #img-jumbo {
-  scale: 0.3; 
-  /* float: right; */
+  position: relative;
+  width: 700px;
   padding: 0%;
- 
+ bottom: -25px;
 }
 .plans {
   width: 100%;
@@ -115,6 +125,7 @@ p {
 }
 .selezionato {
   border-color: blue;
+  
   padding: 2px;
   margin: 2px;
   height: 5px;
@@ -128,16 +139,29 @@ p {
 .piano {
   width: 30%;
   height: 600px;
-  background-color: blue;
+  border: 2px solid;
+  border-color: rgba(128, 128, 128, 0.185);
+  /* background-color: blue; */
   
   margin: 20px;
 }
-
+.plan-name {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  border-bottom: 2px solid;
+  border-color: rgba(128, 128, 128, 0.185);
+}
 .card {
-  background-color: aqua;
+  /* background-color: aqua; */
+  border: 2px solid;
+  border-color: rgba(128, 128, 128, 0.185);
   height: 250px;
   width: 80%;
   max-width: 1000px;
+  margin: 20px;
 }
 
 .partner {
@@ -171,22 +195,22 @@ p {
   width: 100%;
   background-color: aquamarine;
   display: flex;
-  height: calc(100% / 2);
+  aspect-ratio: 3;
 
 }
-.box1 {
+.boxleft {
   width: calc(100% / 3);
   background-color: aliceblue;
   display: flex;
   flex-wrap: wrap;
 }
-.box2 {
+.boxcenter {
   width: calc(100% / 3);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.box3 {
+.boxright {
   width: calc(100% / 3);
   display: flex;
   flex-wrap: wrap;
@@ -223,7 +247,7 @@ ul {
   flex-direction: column;
 }
 
-ul li {
+ul.footer li {
   margin-bottom: 10px;
 }
 
