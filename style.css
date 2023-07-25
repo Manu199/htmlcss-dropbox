@@ -33,11 +33,13 @@ ul{
 }
 ul li{
   padding: 15px;
+
 }
 
 .jumbotron {
   height: 700px;
   background-color: #B4D0E7;
+  width: 100%;
   justify-content: center;
   display: flex;
   /* overflow: hidden; */
@@ -163,4 +165,24 @@ p {
   width: 200px;
   background-color: brown;
   margin: 10px;
+}
+.box-client {
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+}
+.box1 {
+  width: calc(100% / 3);
+  background-color: aliceblue;
+}
+.box2 {
+  width: calc(100% / 3);
+}
+.box3 {
+  width: calc(100% / 3);
 }
