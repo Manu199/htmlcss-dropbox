@@ -8,6 +8,7 @@ body {
 }
 html{
   font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 .bold {
   font-weight: 700;
@@ -118,9 +119,13 @@ ul li a{
   
 }
 
-.arrow-left {
+.arrow-down {
   position:absolute;
-  bottom: 0;
+  bottom: 70px;
+  left: 10px;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #000000;
   
 }
 #jumboright {
@@ -134,9 +139,7 @@ h1 {
 h2, h4, h5 {
   font-size: 2.7rem;
 }
-p {
-  /* padding: 5px; */
-}
+
 .btn {
   max-width: 90%;
   text-decoration: none;
@@ -145,6 +148,7 @@ p {
   margin-top: 30px ;
 }
 .blu{
+  width: 250px;
   padding: 9px 15px;
   background-color: #0061FF;
   color: white;
@@ -201,13 +205,20 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: fit-content;
 }
 .piano {
   width: 30%;
-  height: fit-content;
   border: 1px solid;
   border-color: rgba(128, 128, 128, 0.4); 
   padding-bottom: 40px;
+}
+.fa-ul {
+  display: flex;
+  flex-direction: column;
+}
+div.piano{
+  height: 100%;
 }
 .plan-name {
   text-align: center;
@@ -276,11 +287,16 @@ h3 {
   width: 80%;
   max-width: 1000px;
   margin: 20px;
+  position: relative;
 }
 
 .card-body {
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.card-body p {
+  padding-top: 30px;
 }
 
 /* STATS */
@@ -290,6 +306,14 @@ h3 {
   width: 1000px;
 }
 
+.card-btn{
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 33px;
+}
 h5{
   max-width: 700px;
   margin-top: 200px;
@@ -434,6 +458,8 @@ h11 {
   align-content: stretch;
   object-fit: c;
 }
+
+
 .square1 img {
   filter: invert(1); 
   width: 50%;
@@ -466,6 +492,8 @@ h11 {
   filter: invert(1); 
   width: 50%;
 }
+
+
 .square1:hover {
   border: 14px solid #bcffb3;
 }
@@ -490,6 +518,32 @@ h11 {
 .square8:hover {
   border: 14px solid #8b7203;
 }
+.square1:active {
+  border: 14px solid #bcffb3;
+}
+.square2:hover {
+  border: 14px solid #bd2b65
+}
+.square3:hover {
+  border: 14px solid #91e0ff;
+}
+.square4:hover {
+  border: 14px solid #ff7d7d;
+}
+.square5:hover {
+  border: 14px solid #740515;
+}
+.square6:hover {
+  border: 14px solid #5ea1d8;
+}
+.square7:hover {
+  border: 14px solid #2f52dd;
+}
+.square8:hover {
+  border: 14px solid #8b7203;
+}
+
+
 .square1 {
   background-color: #A2D39B;
 }
@@ -543,6 +597,20 @@ h6{
 
 /* PROVA GRATUITA */
 
+
+/* FAQ */
+.faq{
+  height: 600px;
+}
+.ulmenu{
+  list-style: none;
+}
+.limenu{
+  border: 1px 0 1px 0 solid black;
+}
+/* FAQ */
+/* FOOTER */
+
 .site-footer {
   background-color: #000000;
   padding: 20px 0;
@@ -553,24 +621,28 @@ h6{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1250px;
 }
 
 .col {
-  width: 20%; /* Imposta la larghezza delle colonne */
-  padding: 0 10px;
+  width: 20%; 
+  padding: 0 25px;
+  margin-top: 60px;
 }
 
-/* Stile per le liste non ordinate */
-ul {
+
+ul.footer {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
   
 }
 
 ul.footer li {
   margin-bottom: 10px;
+  
 }
 
 ul.footer li a {
@@ -578,3 +650,11 @@ ul.footer li a {
   
   text-decoration: none;
 }
+h12 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-left: 14px;
+  padding-bottom: 30px;
+}
+/* FOOTER */
