@@ -13,6 +13,9 @@ html{
   display: flex;
   align-items: center;
 }
+.grid {
+  display: grid;
+}
 .select-plan{
   margin-right: 50px;
   margin-top: 50px;
@@ -23,7 +26,6 @@ html{
   align-items: center;
   display: flex;
   margin: 0 auto;
-
 }
 
 .header {
@@ -46,9 +48,10 @@ html{
   align-items: center;
   flex-direction: row;
 }
-ul li{
+ul li a{
   padding: 15px;
-
+  text-decoration: none; 
+  color: #000000; 
 }
 
 .jumbotron {
@@ -79,9 +82,16 @@ ul li{
 #jumboleft {
   max-width: 400px;
   padding-top: 20px;
+  
+}
+.arrow-left {
+  position:absolute;
+  bottom: 0;
+  
 }
 #jumboright {
   max-width: 500px;
+  position: relative;
 }
 h1 {
   font-weight: 800;
@@ -157,11 +167,10 @@ p {
 }
 .piano {
   width: 30%;
-  height: 600px;
+  height: fit-content;
   border: 1px solid;
-  border-color: rgba(128, 128, 128, 0.4)
-
-  /* background-color: blue; */;
+  border-color: rgba(128, 128, 128, 0.4); 
+  padding-bottom: 40px;
 }
 .plan-name {
   text-align: center;
@@ -174,14 +183,40 @@ p {
   border-bottom: 1px solid;
   border-color: rgba(128, 128, 128, 0.4);
 }
+
 .detail {
-  margin: 30px;
+  margin-top: 30px;
+  margin-left: 20px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column ; 
+}
+
+.detail ul{
+  display: flex;
+  width: 80%;
+  margin: 30px;
+  height: fit-content;
+
+}
+.try {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  padding: 10px 45px;
+  
+  
+}
+.fa-li {
+  text-align: left;
+  width: 100%;
+  padding: 0%;
   
 }
 .card { 
-  /* background-color: aqua; */
   border: 2px solid;
   border-color: rgba(128, 128, 128, 0.185);
   height: 250px;
@@ -191,8 +226,19 @@ p {
 }
 
 .partner {
-  scale: 0.5;
-  float: left;
+ width: 70%;
+}
+.img-partner {
+  width: 50%;
+  display: flex;
+  margin-left: -10px;
+}
+.partner-left {
+  height: fit-content;
+  width:max-content;
+}
+.partner-right {
+  height: fit-content;
 }
 .business{
   justify-content: center;
@@ -200,22 +246,40 @@ p {
   display:flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-top: 120px;
 }
 .bus-top {
   display: flex;
   flex-wrap: wrap;
-
+  margin-top: 50px;
 }
 .bus-bottom {
   display: flex;
   flex-wrap: wrap;
+}
+
+.box {
+  height: 400px;
+  width: 230px;
+  margin: 10px 30px;
+}
+.box-img {
+  width: 100%
+}
+.top-box{
+ object-fit: contain;
+ width: fit-content;
+ height: 50%;
+}
+h11 {
+  font-size: large;
+  font-weight: 800;
 
 }
-.box {
-  height: 300px;
-  width: 200px;
-  background-color: brown;
-  margin: 10px;
+.boxp{
+  font-size: small;
+  padding-top: 20px;
+  padding-left: 0;
 }
 .box-client {
   width: 100%;
@@ -309,7 +373,7 @@ p {
   background-color: #FFD830;
 }
 .site-footer {
-  background-color: #f0f0f0;
+  background-color: #000000;
   padding: 20px 0;
 }
 
@@ -331,13 +395,15 @@ ul {
   padding: 0;
   display: flex;
   flex-direction: column;
+  
 }
 
 ul.footer li {
   margin-bottom: 10px;
 }
 
-ul li a {
-  color: #333;
+ul.footer li a {
+  color: white;
+  
   text-decoration: none;
 }
