@@ -9,9 +9,27 @@ body {
 html{
   font-family: 'Open Sans', sans-serif;
 }
+.bold {
+  font-weight: 700;
+}
+.small{
+  font-size: small;
+}
+.gray{
+  color: gray;
+}
+.margin-top{
+  margin-top: 20px;
+}
+.margin-bottom{
+  padding-bottom: 30px;
+}
 .flex {
   display: flex;
   align-items: center;
+}
+.column{
+  flex-direction: column;
 }
 .grid {
   display: grid;
@@ -27,32 +45,44 @@ html{
   display: flex;
   margin: 0 auto;
 }
+.bigmargin-bottom{
+  margin-bottom: 150px;
+}
+/* HEADER */
 
 .header {
   justify-content: space-between;
   height: 80px;
-  
-  /* width: 100%; */
-  /* display: flex;
-  align-items: center; */
 }
+
 .header-sinistra {
   display: flex;
   align-items: center;
   padding: 15px;
 }
 
-.list-header {
+.list-header-right {
   display: flex;
   list-style: none;
   align-items: center;
   flex-direction: row;
+  margin-right: 20px;
 }
+.list-header-left {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
 ul li a{
   padding: 15px;
   text-decoration: none; 
   color: #000000; 
 }
+
+/* JUMBOTRON */
 
 .jumbotron {
   height: 800px;
@@ -61,6 +91,7 @@ ul li a{
   justify-content: center;
   display: flex;
 }
+
 .body-jumbo {
   max-width: 1200px;
 
@@ -71,6 +102,7 @@ ul li a{
   padding-top: 35px;
 
 }
+
 .jumbo-bottom {
   display: flex;
   flex-direction: row;
@@ -79,11 +111,13 @@ ul li a{
   justify-content: flex-start;
   padding-top: 40px;
 }
+
 #jumboleft {
   max-width: 400px;
   padding-top: 20px;
   
 }
+
 .arrow-left {
   position:absolute;
   bottom: 0;
@@ -101,7 +135,7 @@ h2, h4, h5 {
   font-size: 2.7rem;
 }
 p {
-  padding: 5px;
+  /* padding: 5px; */
 }
 .btn {
   max-width: 90%;
@@ -137,6 +171,9 @@ p {
   left: 400px;
   bottom: -25px;
 }
+
+/* PLAN  */
+
 .plans {
   width: 100%;
   max-width: 1000px;
@@ -195,10 +232,20 @@ p {
 .detail ul{
   display: flex;
   width: 80%;
-  margin: 30px;
+  margin: 20px;
   height: fit-content;
-
 }
+.detail ul li{
+  margin-top: 20px;
+  height: fit-content;
+  
+}
+
+.fa-check {
+  color: #0061FF;
+  font-weight: 900;
+}
+
 .try {
   display: flex;
   align-self: center;
@@ -216,30 +263,89 @@ p {
   padding: 0%;
   
 }
+h3 {
+  margin-bottom: 20px;
+}
+
+/* CARD */
+
 .card { 
-  border: 2px solid;
-  border-color: rgba(128, 128, 128, 0.185);
+  border: 1px solid;
+  border-color: rgba(128, 128, 128, 0.4);
   height: 250px;
   width: 80%;
   max-width: 1000px;
   margin: 20px;
 }
 
+.card-body {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* STATS */
+.stats{
+  justify-content: flex-start ;
+  align-items: flex-start;
+  width: 1000px;
+}
+
+h5{
+  max-width: 700px;
+  margin-top: 200px;
+  margin-bottom: 75px;
+}
+
+/* PARTNER */
+
 .partner {
  width: 70%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .img-partner {
-  width: 50%;
+  width: 36.5rem;
   display: flex;
   margin-left: -10px;
+  margin-top: 100px;
+}
+h10{
+  margin-top:  150px;
+  margin-left: 40px;
+  font-size: x-large;
 }
 .partner-left {
   height: fit-content;
-  width:max-content;
+  width: 100%;
+  display: flex ;
+  justify-content: center;
 }
 .partner-right {
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  max-width: 400px;
 }
+.btn-find{
+  padding: 10px 20px;
+  border: 1px solid black;
+  max-width: 90%;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-top: 30px ;
+}
+
+/* BUSINESS */
+
+.title-business {
+  width: 1000px;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .business{
   justify-content: center;
   align-items: center;
@@ -258,10 +364,16 @@ p {
   flex-wrap: wrap;
 }
 
+/* BUSINESS */
+
+
+/* BOX */
+
+
 .box {
-  height: 400px;
-  width: 230px;
-  margin: 10px 30px;
+  height: 480px;
+  width: 300px;
+  margin: 20px 25px;
 }
 .box-img {
   width: 100%
@@ -272,12 +384,12 @@ p {
  height: 50%;
 }
 h11 {
-  font-size: large;
+  font-size: x-large;
   font-weight: 800;
 
 }
 .boxp{
-  font-size: small;
+  font-size: medium;
   padding-top: 20px;
   padding-left: 0;
 }
@@ -307,6 +419,12 @@ h11 {
   display: flex;
   flex-wrap: wrap;
 }
+.bottom-box{
+  margin-top: 20px;
+
+}
+/* BOX */
+
 .square1, .square2, .square3, .square4, .square5, .square6, .square7, .square8 {
   height: 50%;
   width: 50%;
@@ -348,6 +466,30 @@ h11 {
   filter: invert(1); 
   width: 50%;
 }
+.square1:hover {
+  border: 14px solid #bcffb3;
+}
+.square2:hover {
+  border: 14px solid #bd2b65
+}
+.square3:hover {
+  border: 14px solid #91e0ff;
+}
+.square4:hover {
+  border: 14px solid #ff7d7d;
+}
+.square5:hover {
+  border: 14px solid #740515;
+}
+.square6:hover {
+  border: 14px solid #5ea1d8;
+}
+.square7:hover {
+  border: 14px solid #2f52dd;
+}
+.square8:hover {
+  border: 14px solid #8b7203;
+}
 .square1 {
   background-color: #A2D39B;
 }
@@ -372,6 +514,35 @@ h11 {
 .square8{
   background-color: #FFD830;
 }
+
+/* PROVA GRATUITA */
+
+.prova {
+  background-color:#B4D0E7;
+  height: 350px;
+}
+.free-try{
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 100%;
+}
+h6{
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #61082B;
+  width: 600px;
+}
+.prova-gratuita{
+  text-decoration: none;
+  padding: 10px 40px;
+  background-color: white;
+  color: #000000;
+}
+
+/* PROVA GRATUITA */
+
 .site-footer {
   background-color: #000000;
   padding: 20px 0;
