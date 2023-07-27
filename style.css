@@ -3,63 +3,79 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
 html{
   font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
 }
+
 .bold {
   font-weight: 700;
 }
+
 .small{
   font-size: small;
 }
+
 .gray{
   color: gray;
 }
+
 .margin-top{
   margin-top: 20px;
 }
+
 .margin-bottom{
   padding-bottom: 30px;
 }
+
 .flex {
   display: flex;
   align-items: center;
 }
+
 .column{
   flex-direction: column;
 }
+
 .grid {
   display: grid;
 }
+
 .select-plan{
   margin-right: 50px;
   margin-top: 50px;
   margin-bottom: 40px;
 }
+
 .container {
   justify-content: center;
   align-items: center;
   display: flex;
   margin: 0 auto;
 }
+
 .bigmargin-bottom{
   margin-bottom: 150px;
 }
+
 /* HEADER */
 
 .header {
   justify-content: space-between;
   height: 80px;
+  
 }
 
 .header-sinistra {
   display: flex;
-  align-items: center;
-  padding: 15px;
+  justify-content: center;
+  padding: 1px;
+  
 }
 
 .list-header-right {
@@ -69,6 +85,7 @@ html{
   flex-direction: row;
   margin-right: 20px;
 }
+
 .list-header-left {
   display: flex;
   list-style: none;
@@ -77,12 +94,26 @@ html{
   margin-left: 20px;
 }
 
-ul li a{
-  padding: 15px;
+ul li.li-header a{
+  margin: 15px;
   text-decoration: none; 
   color: #000000; 
 }
 
+header ul li a.blu{
+  color: white;
+}
+
+.li-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.li-header:hover{
+  border-bottom:  3px solid #000000;
+  
+  
+}
 /* JUMBOTRON */
 
 .jumbotron {
@@ -128,14 +159,17 @@ ul li a{
   color: #000000;
   
 }
+
 #jumboright {
   max-width: 500px;
   position: relative;
 }
+
 h1 {
   font-weight: 800;
   font-size: 5rem;
 }
+
 h2, h4, h5 {
   font-size: 2.7rem;
 }
@@ -147,15 +181,18 @@ h2, h4, h5 {
   cursor: pointer;
   margin-top: 30px ;
 }
+
 .blu{
   width: 250px;
   padding: 9px 15px;
   background-color: #0061FF;
   color: white;
 }
+
 .buttons .blu{
   padding: 12px;
 }
+
 .buttons {
   cursor: pointer;
   display: flex;
@@ -165,9 +202,11 @@ h2, h4, h5 {
   width: 243px;
   
 }
+
 #jumboright {
   position: absolute;
 }
+
 #img-jumbo {
   position: relative;
   width: 900px;
@@ -183,6 +222,7 @@ h2, h4, h5 {
   max-width: 1000px;
   margin-top: 150px;
 }
+
 .selezionato {
   border-color: blue;
   border-radius: 50%;
@@ -192,6 +232,7 @@ h2, h4, h5 {
   border: 5px solid;
   color:#0061FF;
 }
+
 .select {
   border-color: blue;
   border-radius: 50%;
@@ -201,25 +242,30 @@ h2, h4, h5 {
   border: 2px solid;
   color: lightgray; 
 }
+
 .selection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: fit-content;
 }
+
 .piano {
   width: 30%;
   border: 1px solid;
   border-color: rgba(128, 128, 128, 0.4); 
   padding-bottom: 40px;
 }
+
 .fa-ul {
   display: flex;
   flex-direction: column;
 }
+
 div.piano{
   height: 100%;
 }
+
 .plan-name {
   text-align: center;
   justify-content: center;
@@ -246,6 +292,7 @@ div.piano{
   margin: 20px;
   height: fit-content;
 }
+
 .detail ul li{
   margin-top: 20px;
   height: fit-content;
@@ -268,12 +315,14 @@ div.piano{
   
   
 }
+
 .fa-li {
   text-align: left;
   width: 100%;
   padding: 0%;
   
 }
+
 h3 {
   margin-bottom: 20px;
 }
@@ -314,6 +363,7 @@ h3 {
   align-items: center;
   padding: 10px 33px;
 }
+
 h5{
   max-width: 700px;
   margin-top: 200px;
@@ -328,23 +378,27 @@ h5{
  justify-content: center;
  align-items: center;
 }
+
 .img-partner {
   width: 36.5rem;
   display: flex;
   margin-left: -10px;
   margin-top: 100px;
 }
+
 h10{
   margin-top:  150px;
   margin-left: 40px;
   font-size: x-large;
 }
+
 .partner-left {
   height: fit-content;
   width: 100%;
   display: flex ;
   justify-content: center;
 }
+
 .partner-right {
   height: fit-content;
   display: flex;
@@ -352,6 +406,7 @@ h10{
   align-items: baseline;
   max-width: 400px;
 }
+
 .btn-find{
   padding: 10px 20px;
   border: 1px solid black;
@@ -378,11 +433,13 @@ h10{
   flex-direction: column;
   margin-top: 120px;
 }
+
 .bus-top {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
 }
+
 .bus-bottom {
   display: flex;
   flex-wrap: wrap;
@@ -399,24 +456,29 @@ h10{
   width: 300px;
   margin: 20px 25px;
 }
+
 .box-img {
   width: 100%
 }
+
 .top-box{
  object-fit: contain;
  width: fit-content;
  height: 50%;
 }
+
 h11 {
   font-size: x-large;
   font-weight: 800;
 
 }
+
 .boxp{
   font-size: medium;
   padding-top: 20px;
   padding-left: 0;
 }
+
 .box-client {
   width: 100%;
   background-color: aquamarine;
@@ -424,12 +486,14 @@ h11 {
   aspect-ratio: 3;
 
 }
+
 .boxleft {
   width: calc(100% / 3);
   background-color: aliceblue;
   display: flex;
   flex-wrap: wrap;
 }
+
 .boxcenter {
   width: calc(100% / 3);
   display: flex;
@@ -438,15 +502,18 @@ h11 {
   background-color: #f5f5f5;
   overflow: auto;
 }
+
 .boxright {
   width: calc(100% / 3);
   display: flex;
   flex-wrap: wrap;
 }
+
 .bottom-box{
   margin-top: 20px;
 
 }
+
 /* BOX */
 
 .square1, .square2, .square3, .square4, .square5, .square6, .square7, .square8 {
@@ -575,6 +642,7 @@ h11 {
   background-color:#B4D0E7;
   height: 350px;
 }
+
 .free-try{
   width: 1000px;
   display: flex;
@@ -582,12 +650,14 @@ h11 {
   align-content: center;
   height: 100%;
 }
+
 h6{
   font-size: 2.8rem;
   font-weight: 800;
   color: #61082B;
   width: 600px;
 }
+
 .prova-gratuita{
   text-decoration: none;
   padding: 10px 40px;
@@ -599,27 +669,33 @@ h6{
 
 
 /* FAQ */
+
 .faq{
   height: 600px;
   max-width: 1000px;
   padding-top: 140px;
 }
+
 .ulmenu{
   list-style: none;
 }
+
 .limenu{
   border: 1px 0 1px 0 solid black;
   
 }
+
 .open-menu{
   position: absolute;
   right: 20px;
-  top: -15px;
+  top: -1px;
 }
+
 div.menu {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 ul li.limenu{
  
   position: relative;
@@ -629,6 +705,7 @@ ul li.limenu{
   padding-top: 18px;
   border-bottom: 1px solid rgba(131, 131, 131, 0.719);
 }
+
 h13 {
   font-size: 15px;
   line-height: 34px;
@@ -639,12 +716,14 @@ h13 {
   cursor: pointer;
   position: relative;
 }
+
 h7 {
   font-size: 36px;
   line-height: 42px;
   font-weight: 700;
   margin-bottom: 50px;
 }
+
 p.faqmnu {
   color: rgba(48, 69, 92, 0.8);
   font-size: 15px;
@@ -656,10 +735,12 @@ p.faqmnu {
   margin-top: 14px;
   z-index: 2;
 }
+
 ul.ulmenu { 
   border-top: 1px solid rgba(131, 131, 131, 0.719);
 }
 /* FAQ */
+
 /* FOOTER */
 
 .site-footer {
@@ -701,11 +782,11 @@ ul.footer li a {
   
   text-decoration: none;
 }
+
 h12 {
   color: white;
   font-size: 1.5rem;
   font-weight: 800;
-  padding-left: 14px;
   padding-bottom: 30px;
 }
 /* FOOTER */
